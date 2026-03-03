@@ -1,7 +1,7 @@
 // HR-UPDATER: v1.0
 
 import React, { useState } from 'react';
-import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 
 type Tab = 'employer' | 'applicant';
 type ApplicantMode = 'direct' | 'initiative';
@@ -80,7 +80,6 @@ const Contact: React.FC = () => {
       const formData = new FormData();
 
       if (activeTab === 'employer') {
-        // Honeypot check
         if (employer.website) return;
         endpoint = `https://backend-geo-tool.vercel.app/api/employer-submit`;
         formData.append('domain', 'handel-stellenangebote.de');
@@ -90,7 +89,6 @@ const Contact: React.FC = () => {
         });
       } else {
         const data = applicantMode === 'direct' ? direct : initiative;
-        // Honeypot check
         if (data.website) return;
         endpoint = `https://backend-geo-tool.vercel.app/api/applicant-submit`;
         formData.append('domain', 'handel-stellenangebote.de');
@@ -116,12 +114,13 @@ const Contact: React.FC = () => {
     }
   };
 
-  const inputClass = 'mt-1 block w-full border border-slate-300 rounded-lg shadow-sm py-2.5 px-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-colors';
+  const btnClass = 'w-full font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-600 px-8 py-3.5 text-lg disabled:opacity-50';
+  const inputClass = 'mt-1 block w-full border border-slate-300 rounded-lg shadow-sm py-2.5 px-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors';
   const labelClass = 'block text-sm font-medium text-slate-700 mb-1';
 
   if (status === 'success') {
     return (
-      <div className="bg-slate-50 py-16 md:py-24">
+      <div className="bg-slate-50 min-h-screen py-16 md:py-24">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-12">
             <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
@@ -135,9 +134,12 @@ const Contact: React.FC = () => {
                 ? 'Ihre Stellenanzeige wurde erfolgreich übermittelt. Wir melden uns in Kürze bei Ihnen.'
                 : 'Ihre Bewerbung wurde erfolgreich gesendet. Wir setzen uns zeitnah mit Ihnen in Verbindung.'}
             </p>
-            <Button onClick={() => setStatus('idle')} variant="primary" size="lg">
+            <button onClick={() => setStatus('idle')} className={btnClass}>
               Neue Anfrage stellen
-            </Button>
+            </button>
+            <div className="mt-6">
+              <Link to="/" className="text-blue-600 hover:text-blue-700 text-sm font-medium">Zurück zur Startseite</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -145,8 +147,11 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <div className="bg-slate-50 py-16 md:py-24">
+    <div className="bg-slate-50 min-h-screen py-16 md:py-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-4">
+          <Link to="/" className="text-blue-600 hover:text-blue-700 text-sm font-medium">&larr; Zurück zur Startseite</Link>
+        </div>
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Kontakt</h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -161,7 +166,7 @@ const Contact: React.FC = () => {
             onClick={() => { setActiveTab('employer'); setStatus('idle'); setErrorMsg(''); }}
             className={`flex-1 py-3 px-4 text-sm font-semibold rounded-lg transition-all duration-200 ${
               activeTab === 'employer'
-                ? 'bg-white text-sky-700 shadow-sm'
+                ? 'bg-white text-blue-700 shadow-sm'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -172,7 +177,7 @@ const Contact: React.FC = () => {
             onClick={() => { setActiveTab('applicant'); setStatus('idle'); setErrorMsg(''); }}
             className={`flex-1 py-3 px-4 text-sm font-semibold rounded-lg transition-all duration-200 ${
               activeTab === 'applicant'
-                ? 'bg-white text-sky-700 shadow-sm'
+                ? 'bg-white text-blue-700 shadow-sm'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -181,7 +186,6 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-10">
-          {/* Error message */}
           {status === 'error' && (
             <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
               <p className="text-sm text-red-700 font-medium">{errorMsg}</p>
@@ -194,7 +198,6 @@ const Contact: React.FC = () => {
               <h2 className="text-xl font-bold text-slate-900 mb-2">Stellenanzeige aufgeben</h2>
               <p className="text-slate-600 text-sm mb-6">Füllen Sie das Formular aus und wir veröffentlichen Ihre Stelle schnellstmöglich.</p>
 
-              {/* Honeypot */}
               <div className="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabIndex={-1}>
                 <label htmlFor="emp-website">Website</label>
                 <input type="text" id="emp-website" name="website" value={employer.website} onChange={handleEmployerChange} autoComplete="off" tabIndex={-1} />
@@ -254,14 +257,14 @@ const Contact: React.FC = () => {
                 <textarea id="emp-beschreibung" name="beschreibung" rows={5} value={employer.beschreibung} onChange={handleEmployerChange} className={inputClass} placeholder="Beschreiben Sie die Stelle, Anforderungen und was Sie bieten..." />
               </div>
 
-              <Button type="submit" className="w-full" size="lg" disabled={status === 'loading'}>
+              <button type="submit" className={btnClass} disabled={status === 'loading'}>
                 {status === 'loading' ? (
                   <span className="flex items-center justify-center gap-2">
                     <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>
                     Wird gesendet...
                   </span>
                 ) : 'Stellenanzeige einreichen'}
-              </Button>
+              </button>
             </form>
           )}
 
@@ -271,21 +274,20 @@ const Contact: React.FC = () => {
               <h2 className="text-xl font-bold text-slate-900 mb-2">Jetzt bewerben</h2>
               <p className="text-slate-600 text-sm mb-4">Wählen Sie aus, wie Sie sich bewerben möchten.</p>
 
-              {/* Sub-option radio buttons */}
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <label className={`flex-1 flex items-center gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                  applicantMode === 'direct' ? 'border-sky-500 bg-sky-50' : 'border-slate-200 hover:border-slate-300'
+                  applicantMode === 'direct' ? 'border-blue-500 bg-blue-50' : 'border-slate-200 hover:border-slate-300'
                 }`}>
-                  <input type="radio" name="applicantMode" value="direct" checked={applicantMode === 'direct'} onChange={() => setApplicantMode('direct')} className="text-sky-600 focus:ring-sky-500" />
+                  <input type="radio" name="applicantMode" value="direct" checked={applicantMode === 'direct'} onChange={() => setApplicantMode('direct')} className="text-blue-600 focus:ring-blue-500" />
                   <div>
                     <span className="font-semibold text-slate-900 text-sm">Auf eine Stelle bewerben</span>
                     <p className="text-xs text-slate-500 mt-0.5">Direkte Bewerbung mit Stellen-Referenz</p>
                   </div>
                 </label>
                 <label className={`flex-1 flex items-center gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                  applicantMode === 'initiative' ? 'border-sky-500 bg-sky-50' : 'border-slate-200 hover:border-slate-300'
+                  applicantMode === 'initiative' ? 'border-blue-500 bg-blue-50' : 'border-slate-200 hover:border-slate-300'
                 }`}>
-                  <input type="radio" name="applicantMode" value="initiative" checked={applicantMode === 'initiative'} onChange={() => setApplicantMode('initiative')} className="text-sky-600 focus:ring-sky-500" />
+                  <input type="radio" name="applicantMode" value="initiative" checked={applicantMode === 'initiative'} onChange={() => setApplicantMode('initiative')} className="text-blue-600 focus:ring-blue-500" />
                   <div>
                     <span className="font-semibold text-slate-900 text-sm">Initiativbewerbung</span>
                     <p className="text-xs text-slate-500 mt-0.5">Allgemeine Bewerbung ohne konkrete Stelle</p>
@@ -296,7 +298,6 @@ const Contact: React.FC = () => {
               {/* ---- Direct Application Form ---- */}
               {applicantMode === 'direct' && (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  {/* Honeypot */}
                   <div className="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabIndex={-1}>
                     <label htmlFor="dir-website">Website</label>
                     <input type="text" id="dir-website" name="website" value={direct.website} onChange={handleDirectChange} autoComplete="off" tabIndex={-1} />
@@ -339,21 +340,20 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full" size="lg" disabled={status === 'loading'}>
+                  <button type="submit" className={btnClass} disabled={status === 'loading'}>
                     {status === 'loading' ? (
                       <span className="flex items-center justify-center gap-2">
                         <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>
                         Wird gesendet...
                       </span>
                     ) : 'Bewerbung absenden'}
-                  </Button>
+                  </button>
                 </form>
               )}
 
               {/* ---- Initiative Application Form ---- */}
               {applicantMode === 'initiative' && (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  {/* Honeypot */}
                   <div className="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabIndex={-1}>
                     <label htmlFor="ini-website">Website</label>
                     <input type="text" id="ini-website" name="website" value={initiative.website} onChange={handleInitiativeChange} autoComplete="off" tabIndex={-1} />
@@ -409,14 +409,14 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full" size="lg" disabled={status === 'loading'}>
+                  <button type="submit" className={btnClass} disabled={status === 'loading'}>
                     {status === 'loading' ? (
                       <span className="flex items-center justify-center gap-2">
                         <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>
                         Wird gesendet...
                       </span>
                     ) : 'Initiativbewerbung absenden'}
-                  </Button>
+                  </button>
                 </form>
               )}
             </div>
