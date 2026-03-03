@@ -7,6 +7,8 @@ import { JobProfiles } from './pages/JobProfiles';
 import { Employers } from './pages/Employers';
 import { Impressum } from './pages/Impressum';
 import { AiAssistant } from './components/AiAssistant';
+import Datenschutz from './pages/Datenschutz';
+import AutorSeite from './pages/AutorSeite';
 
 function App() {
   return (
@@ -18,7 +20,10 @@ function App() {
           <Route path="/profiles" element={<JobProfiles />} />
           <Route path="/employers" element={<Employers />} />
           <Route path="/impressum" element={<Impressum />} />
-        </Routes>
+                  {/* // HR-UPDATER: v1.0 */}
+          <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/autor/thomas-sander" element={<AutorSeite />} />
+          </Routes>
         <AiAssistant />
       </Layout>
     </Router>
