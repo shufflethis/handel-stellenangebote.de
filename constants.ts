@@ -3,54 +3,228 @@ import { CareerProfile, FaqItem, JobListing } from './types';
 export const JOB_LISTINGS: JobListing[] = [
   {
     id: '1',
-    title: 'Filialleiter (m/w/d)',
-    company: 'FreshMarket GmbH',
-    location: 'Hamburg',
+    title: 'Kassierer/in (Handel)',
+    company: 'BILLA AG',
+    location: 'Wien,Leopoldstadt',
     type: 'Vollzeit',
-    category: 'Management',
-    salaryRange: '45.000€ - 60.000€',
-    postedDate: '2023-10-25',
-    featured: true
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
   },
   {
     id: '2',
-    title: 'Verkäufer im Einzelhandel (m/w/d)',
-    company: 'ModeBoutique Müller',
-    location: 'Berlin',
-    type: 'Teilzeit',
-    category: 'Verkauf',
-    salaryRange: '14€ - 16€ / Std',
-    postedDate: '2023-10-24',
-    featured: true
+    title: 'Kassierer/in (Handel)',
+    company: 'Penny GmbH',
+    location: 'Wien,Leopoldstadt',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
   },
   {
     id: '3',
-    title: 'Lagerlogistiker (m/w/d)',
-    company: 'Global Trade Logistics',
-    location: 'Frankfurt am Main',
+    title: 'Kassierer/in (Handel)',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Steinach am Brenner',
     type: 'Vollzeit',
-    category: 'Logistik',
-    postedDate: '2023-10-23'
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
   },
   {
     id: '4',
-    title: 'E-Commerce Manager (m/w/d)',
-    company: 'TechStore24',
-    location: 'München (Remote möglich)',
+    title: 'Kassierer/in (Handel)',
+    company: 'ISG Personalmanagement GmbH',
+    location: 'Nauders',
     type: 'Vollzeit',
-    category: 'E-Commerce',
-    salaryRange: '50.000€+',
-    postedDate: '2023-10-22',
-    featured: true
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
   },
   {
     id: '5',
-    title: 'Ausbildung zum Kaufmann im Einzelhandel 2024',
-    company: 'SuperKauf',
-    location: 'Köln',
-    type: 'Ausbildung',
-    category: 'Verkauf',
-    postedDate: '2023-10-20'
+    title: 'Kassierer/in (Handel)',
+    company: 'Hornbach Baumarkt GmbH',
+    location: 'Eisenstadt',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '6',
+    title: 'Kassierer/in (Handel)',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Radstadt',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '7',
+    title: 'Kassierer/in (Handel)',
+    company: 'Lidl Österreich GmbH',
+    location: 'Altenmarkt im Pongau',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '8',
+    title: 'Kassierer/in (Handel)',
+    company: 'Lidl Österreich GmbH',
+    location: 'Trofaiach',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '9',
+    title: 'Kassierer/in (Handel)',
+    company: 'Lidl Österreich GmbH',
+    location: 'Wien,Favoriten',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '10',
+    title: 'Kassierer/in (Handel)',
+    company: 'Lidl Österreich GmbH',
+    location: 'Reinbach',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '11',
+    title: 'Kassierer/in (Handel)',
+    company: 'Lidl Österreich GmbH',
+    location: 'Zell am See',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '12',
+    title: 'Kassierer/in (Handel)',
+    company: 'Lidl Österreich GmbH',
+    location: 'Marchtrenk',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '13',
+    title: 'Kassierer/in (Handel)',
+    company: 'Penny GmbH',
+    location: 'Wien,Brigittenau',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '14',
+    title: 'Kassierer/in (Handel)',
+    company: 'BILLA AG',
+    location: 'Hof bei Salzburg',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '15',
+    title: 'Kassierer/in (Handel)',
+    company: 'BILLA AG',
+    location: 'Stainach',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '16',
+    title: 'Kassierer/in (Handel)',
+    company: 'Penny GmbH',
+    location: 'Wien',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '17',
+    title: 'Kassierer/in (Handel)',
+    company: 'OBI Bau- u. Heimwerkermärkte GMUNDEN',
+    location: 'Gmunden',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '18',
+    title: 'Kassierer/in (Handel)',
+    company: 'OBI Bau- und Heimwerkermärkt e Systemzentrale GmbH',
+    location: 'Wörgl',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '19',
+    title: 'Kassierer/in (Handel)',
+    company: 'SPAR Supermarkt',
+    location: 'Kematen',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '20',
+    title: 'Kassierer/in (Handel)',
+    company: 'OBI Märkte 1170 Wien',
+    location: 'Wien,Hernals',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '21',
+    title: 'Kassierer/in (Handel)',
+    company: 'Penny GmbH',
+    location: 'Feistritz im Rosental',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '22',
+    title: 'Kassierer/in (Handel)',
+    company: 'PENNY GmbH',
+    location: 'Weiz',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '23',
+    title: 'Kassierer/in (Handel)',
+    company: 'Penny GmbH',
+    location: 'Hartberg',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '24',
+    title: 'Kassierer/in (Handel)',
+    company: 'BILLA AG',
+    location: 'Poysdorf',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
+  },
+  {
+    id: '25',
+    title: 'Kassierer/in (Handel)',
+    company: 'INTERSPAR',
+    location: 'Diemlach',
+    type: 'Vollzeit',
+    category: 'Kassierer/in (Handel)',
+    postedDate: '2026-03-03'
   }
 ];
 
