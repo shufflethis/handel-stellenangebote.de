@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, MapPin, TrendingUp, Users, Truck, Store, ArrowRight, CheckCircle } from 'lucide-react';
-import { SEO_TEXT_INTRO, CAREER_PROFILES, FAQS } from '../constants';
+import { Search, MapPin, TrendingUp, Users, Truck, Store, ArrowRight, CheckCircle, Building, Clock, Briefcase } from 'lucide-react';
+import { SEO_TEXT_INTRO, CAREER_PROFILES, FAQS, JOB_LISTINGS } from '../constants';
 
 export const Home: React.FC = () => {
   return (
@@ -37,6 +37,33 @@ export const Home: React.FC = () => {
             </div>
             <Link to="/jobs" className="bg-accent-600 hover:bg-accent-700 text-white font-bold py-3 px-8 rounded-md transition-all md:w-auto w-full text-center">
               Jobs suchen
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Job Listings - Mobile Prominent */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Aktuelle Stellenangebote im Handel</h2>
+            <p className="text-gray-600">Die neuesten Jobs aus dem Handelssektor</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {JOB_LISTINGS.slice(0, 6).map(job => (
+              <Link to="/jobs" key={job.id} className="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-lg transition-shadow group">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary-600 mb-2">{job.title}</h3>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <span className="flex items-center gap-1"><Building className="w-4 h-4" /> {job.company}</span>
+                  <span className="flex items-center gap-1"><MapPin className="w-4 h-4" /> {job.location}</span>
+                  <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {job.type}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/jobs" className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 px-8 rounded-md transition-colors shadow-sm">
+              Alle {JOB_LISTINGS.length} Stellenangebote ansehen <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -131,6 +158,64 @@ export const Home: React.FC = () => {
               <div key={idx} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Geo SEO - German Cities */}
+      <section className="py-16 bg-slate-50 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">Handel-Jobs in Ihrer Stadt</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+            Finden Sie Stellenangebote im Handel in den wichtigsten deutschen Staedten und Regionen.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {[
+              'Berlin', 'Hamburg', 'Muenchen', 'Koeln', 'Frankfurt am Main', 'Stuttgart',
+              'Duesseldorf', 'Leipzig', 'Dortmund', 'Essen', 'Bremen', 'Dresden',
+              'Hannover', 'Nuernberg', 'Duisburg', 'Bochum', 'Wuppertal', 'Bielefeld',
+              'Bonn', 'Muenster', 'Mannheim', 'Karlsruhe', 'Augsburg', 'Wiesbaden',
+              'Braunschweig', 'Kiel', 'Aachen', 'Chemnitz', 'Halle', 'Magdeburg',
+              'Freiburg', 'Luebeck', 'Erfurt', 'Rostock', 'Mainz', 'Kassel'
+            ].map(city => (
+              <Link
+                key={city}
+                to={`/jobs?location=${encodeURIComponent(city)}`}
+                className="bg-white border border-gray-200 rounded-lg px-4 py-3 text-center text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:shadow-sm transition-all"
+              >
+                {city}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Career Info Section */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">Karriere im Handel: Ihr Weg nach oben</h2>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+            Der Handel bietet vielfaeltige Karrierewege mit attraktiven Aufstiegsmoeglichkeiten. Ob Quereinsteiger oder Branchenprofi - hier finden Sie Ihren Weg.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {CAREER_PROFILES.map(profile => (
+              <div key={profile.id} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-primary-100 p-2 rounded-lg">
+                    <Briefcase className="w-5 h-5 text-primary-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900">{profile.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{profile.shortDesc}</p>
+                <div className="space-y-2">
+                  <p className="text-sm"><span className="font-semibold text-gray-700">Gehalt:</span> <span className="text-green-600">{profile.salary}</span></p>
+                  <p className="text-sm"><span className="font-semibold text-gray-700">Karrierepfad:</span> <span className="text-gray-500">{profile.careerPath}</span></p>
+                </div>
+                <Link to="/profiles" className="inline-flex items-center gap-1 text-primary-600 hover:text-primary-800 text-sm font-medium mt-4">
+                  Mehr erfahren <ArrowRight className="w-3 h-3" />
+                </Link>
               </div>
             ))}
           </div>

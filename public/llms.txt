@@ -1,19 +1,35 @@
 # HR-UPDATER: v1.0
 # handel-stellenangebote.de - Handel Stellenangebote
 
-> handel-stellenangebote.de ist ein spezialisiertes Jobportal fuer Handel-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> handel-stellenangebote.de ist ein spezialisiertes Jobportal fuer Handel-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Es wird betrieben von der Social Media Venture GmbH mit Sitz in Berlin.
 
 ## Ueber uns
-- Spezialisiertes Jobportal fuer Handel
+- Spezialisiertes Jobportal fuer den Handel (Einzelhandel, Grosshandel, E-Commerce)
 - Kostenlose Stellensuche fuer Bewerber
-- Gezielte Reichweite fuer Arbeitgeber
+- Gezielte Reichweite fuer Arbeitgeber im Handelssektor
+- KI-gestuetzte Matching-Technologie fuer optimale Bewerber-Arbeitgeber-Verbindungen
 
-## Kontakt
+## Betreiber
+- Firma: Social Media Venture GmbH
+- Geschaeftsfuehrer: Thomas Sander
+- Adresse: Schliemannstrasse 23, 10437 Berlin
+- Telefon: +49 30 959 988 700
+- E-Mail: info@socialmediaventure.com
 - Website: https://handel-stellenangebote.de
-- Arbeitgeber-Kontakt: https://handel-stellenangebote.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://handel-stellenangebote.de/kontakt-bewerber
 
 ## Inhalte
-- Aktuelle Handel-Stellenangebote
-- Karriere-Ratgeber fuer Handel
-- Gehaltsvergleiche und Brancheninformationen
+- Aktuelle Handel-Stellenangebote in ganz Deutschland, Oesterreich und der Schweiz
+- Berufsbilder und Karriereprofile im Handel (Verkauf, Logistik, Management, E-Commerce)
+- Karriere-Ratgeber und Gehaltsvergleiche fuer den Handelssektor
+- Arbeitgeber-Services: Stellenanzeigen schalten, Talent-Pool, Recruiting-Loesungen
+
+## Schwerpunkte
+- Einzelhandel (Lebensmittel, Mode, Elektronik, Baumarkt)
+- Grosshandel und Distributionslogistik
+- E-Commerce und Online-Handel
+- Filialmanagement und Vertrieb
+
+## Kontakt
+- Arbeitgeber-Kontakt: https://handel-stellenangebote.de/employers
+- Impressum: https://handel-stellenangebote.de/impressum
+- Datenschutz: https://handel-stellenangebote.de/datenschutz
