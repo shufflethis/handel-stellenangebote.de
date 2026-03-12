@@ -1,14 +1,22 @@
 import { GoogleGenAI } from "@google/genai";
 
-const getClient = (): GoogleGenAI => {
+const FALLBACK_MESSAGE = "Der KI-Assistent ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.";
+
+const getClient = (): GoogleGenAI | null => {
   const apiKey = process.env.API_KEY || '';
-  // In a real app, we would handle the missing key more gracefully in the UI
-  return new GoogleGenAI({ apiKey });
+  if (!apiKey) return null;
+  try {
+    return new GoogleGenAI({ apiKey });
+  } catch (e) {
+    console.error("Failed to initialize Gemini client:", e);
+    return null;
+  }
 };
 
 export const getCareerAdvice = async (userQuery: string, context: string = 'General'): Promise<string> => {
   try {
     const ai = getClient();
+    if (!ai) return FALLBACK_MESSAGE;
     // Using gemini-2.5-flash for speed and efficiency for a chat interface
     const model = "gemini-2.5-flash"; 
     
@@ -34,13 +42,14 @@ export const getCareerAdvice = async (userQuery: string, context: string = 'Gene
     return response.text || "Entschuldigung, ich kann gerade keine Antwort generieren. Bitte versuchen Sie es später erneut.";
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Verbindung oder versuchen Sie es später.";
+    return FALLBACK_MESSAGE;
   }
 };
 
 export const optimizeJobDescription = async (originalDescription: string): Promise<string> => {
   try {
     const ai = getClient();
+    if (!ai) return FALLBACK_MESSAGE;
     const model = "gemini-2.5-flash";
 
     const systemPrompt = `
@@ -63,6 +72,6 @@ export const optimizeJobDescription = async (originalDescription: string): Promi
     return response.text || originalDescription;
   } catch (error) {
     console.error("Gemini optimization error", error);
-    return originalDescription;
+    return FALLBACK_MESSAGE;
   }
 };
