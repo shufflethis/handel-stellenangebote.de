@@ -3,228 +3,228 @@ import { CareerProfile, FaqItem, JobListing } from './types';
 export const JOB_LISTINGS: JobListing[] = [
   {
     id: '1',
-    title: 'Kassierer/in (Handel)',
-    company: 'BILLA AG',
-    location: 'Wien,Leopoldstadt',
+    title: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    company: 'Medisca GmbH',
+    location: 'Kabelsketal',
     type: 'Vollzeit',
-    category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    category: 'Sonstiges',
+    postedDate: '2026-03-15'
   },
   {
     id: '2',
-    title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Wien,Leopoldstadt',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Potsdam',
     type: 'Vollzeit',
-    category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    category: 'Sonstiges',
+    postedDate: '2026-03-15'
   },
   {
     id: '3',
-    title: 'Kassierer/in (Handel)',
-    company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Steinach am Brenner',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Berlin',
     type: 'Vollzeit',
-    category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    category: 'Sonstiges',
+    postedDate: '2026-03-15'
   },
   {
     id: '4',
-    title: 'Kassierer/in (Handel)',
-    company: 'ISG Personalmanagement GmbH',
-    location: 'Nauders',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Hannover',
     type: 'Vollzeit',
-    category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    category: 'Sonstiges',
+    postedDate: '2026-03-15'
   },
   {
     id: '5',
-    title: 'Kassierer/in (Handel)',
-    company: 'Hornbach Baumarkt GmbH',
-    location: 'Eisenstadt',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Isernhagen',
     type: 'Vollzeit',
-    category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    category: 'Sonstiges',
+    postedDate: '2026-03-15'
   },
   {
     id: '6',
     title: 'Kassierer/in (Handel)',
-    company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Radstadt',
+    company: 'INTERSPAR',
+    location: 'Wien,Innere Stadt',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '7',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Altenmarkt im Pongau',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Tux',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '8',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Trofaiach',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Gurgl',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '9',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Wien,Favoriten',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Galtür',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '10',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Reinbach',
+    company: 'EUROSPAR',
+    location: 'Haag am Hausruck',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '11',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Zell am See',
+    company: 'Penny GmbH',
+    location: 'Linz',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '12',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Marchtrenk',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Hall in Tirol',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '13',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Wien,Brigittenau',
+    company: 'T & G',
+    location: 'Imst',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '14',
     title: 'Kassierer/in (Handel)',
-    company: 'BILLA AG',
-    location: 'Hof bei Salzburg',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Hötting',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '15',
     title: 'Kassierer/in (Handel)',
-    company: 'BILLA AG',
-    location: 'Stainach',
+    company: 'Autohof Wörgl',
+    location: 'Wörgl',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '16',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Wien',
+    company: 'SPAR Supermarkt',
+    location: 'Steyr',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '17',
     title: 'Kassierer/in (Handel)',
-    company: 'OBI Bau- u. Heimwerkermärkte GMUNDEN',
-    location: 'Gmunden',
+    company: 'Penny GmbH',
+    location: 'Wels',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-13'
   },
   {
     id: '18',
     title: 'Kassierer/in (Handel)',
-    company: 'OBI Bau- und Heimwerkermärkt e Systemzentrale GmbH',
-    location: 'Wörgl',
+    company: 'Penny GmbH',
+    location: 'Pregarten',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '19',
     title: 'Kassierer/in (Handel)',
-    company: 'SPAR Supermarkt',
-    location: 'Kematen',
+    company: 'Penny GmbH',
+    location: 'Wiener Neudorf',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '20',
     title: 'Kassierer/in (Handel)',
-    company: 'OBI Märkte 1170 Wien',
-    location: 'Wien,Hernals',
+    company: 'Lidl Österreich GmbH',
+    location: 'Wien,Donaustadt',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '21',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Feistritz im Rosental',
+    company: 'MEDIA MARKT TV-Hifi-Elektro GmbH',
+    location: 'Dornbirn',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '22',
     title: 'Kassierer/in (Handel)',
-    company: 'PENNY GmbH',
-    location: 'Weiz',
+    company: 'Penny GmbH',
+    location: 'Stainach',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '23',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Hartberg',
+    company: 'XXXLutz Bürs/Bludenz',
+    location: 'Bürs',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '24',
     title: 'Kassierer/in (Handel)',
-    company: 'BILLA AG',
-    location: 'Poysdorf',
+    company: 'Penny GmbH',
+    location: 'Bürmoos',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   },
   {
     id: '25',
     title: 'Kassierer/in (Handel)',
-    company: 'INTERSPAR',
-    location: 'Diemlach',
+    company: 'Penny GmbH',
+    location: 'Freistadt',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-03'
+    postedDate: '2026-03-12'
   }
 ];
 

@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thomas Sander",
+  "url": "https://handel-stellenangebote.de/autor/thomas-sander",
+  "jobTitle": "Gruender & Geschaeftsfuehrer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "handel-stellenangebote.de",
+    "url": "https://handel-stellenangebote.de"
+  },
+  "description": "Gruender von handel-stellenangebote.de - spezialisiertes Jobportal fuer Handel-Stellenangebote.",
+  "knowsAbout": [
+    "Handel",
+    "Personalwesen",
+    "Recruiting",
+    "Jobportale"
+  ]
+}

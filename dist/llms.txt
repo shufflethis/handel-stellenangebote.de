@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# handel-stellenangebote.de - Handel Stellenangebote
+
+> handel-stellenangebote.de ist ein spezialisiertes Jobportal fuer Handel-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Handel
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://handel-stellenangebote.de
+- Arbeitgeber-Kontakt: https://handel-stellenangebote.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://handel-stellenangebote.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Handel-Stellenangebote
+- Karriere-Ratgeber fuer Handel
+- Gehaltsvergleiche und Brancheninformationen
