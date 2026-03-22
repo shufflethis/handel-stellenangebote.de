@@ -3,228 +3,228 @@ import { CareerProfile, FaqItem, JobListing } from './types';
 export const JOB_LISTINGS: JobListing[] = [
   {
     id: '1',
-    title: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
-    company: 'Medisca GmbH',
-    location: 'Kabelsketal',
+    title: 'Sachbearbeitung Umsatzsteuer und Kommunalabgaben (m/w/d)',
+    company: 'Gemeinde HudeSofort-Bewerbung',
+    location: 'Hude (Oldb)',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    postedDate: '2026-03-15'
+    postedDate: '2026-03-22'
   },
   {
     id: '2',
-    title: 'Zahnarzt (m/w/d)',
-    company: 'MeinDentist Berlin GmbH',
-    location: 'Potsdam',
+    title: 'Mitarbeiter Kundenservice Online Banking (m/w/d)',
+    company: 'Serviscope AG',
+    location: 'Köln',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    postedDate: '2026-03-15'
+    postedDate: '2026-03-22'
   },
   {
     id: '3',
-    title: 'Zahnarzt (m/w/d)',
-    company: 'MeinDentist Berlin GmbH',
-    location: 'Berlin',
+    title: 'Mitarbeiter Kundenservice Online Banking (m/w/d)',
+    company: 'Serviscope AG',
+    location: 'Troisdorf',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    postedDate: '2026-03-15'
+    postedDate: '2026-03-22'
   },
   {
     id: '4',
-    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
-    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
-    location: 'Hannover',
+    title: 'Elektrotechnikerin / Elektrotechniker / Meisterin / Meister (m/w/d) als Projektmitarbeiter Eisenbahn-Signaltechnik',
+    company: 'Scheidt & Bachmann Signalling Systems GmbH',
+    location: 'Düsseldorf',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    postedDate: '2026-03-15'
+    postedDate: '2026-03-22'
   },
   {
     id: '5',
-    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
-    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
-    location: 'Isernhagen',
+    title: 'Elektrotechnikerin / Elektrotechniker / Meisterin / Meister (m/w/d) als Projektmitarbeiter Eisenbahn-Signaltechnik',
+    company: 'Scheidt & Bachmann Signalling Systems GmbH',
+    location: 'Mönchengladbach',
     type: 'Vollzeit',
     category: 'Sonstiges',
-    postedDate: '2026-03-15'
+    postedDate: '2026-03-22'
   },
   {
     id: '6',
-    title: 'Kassierer/in (Handel)',
-    company: 'INTERSPAR',
-    location: 'Wien,Innere Stadt',
+    title: 'Versand- & Lagermitarbeiter (m/w/d) als Shipping & Receiving Clerk',
+    company: 'Elevate Aircraft Seating GmbH',
+    location: 'Kaiserslautern',
     type: 'Vollzeit',
-    category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    category: 'Sonstiges',
+    postedDate: '2026-03-22'
   },
   {
     id: '7',
     title: 'Kassierer/in (Handel)',
-    company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Tux',
+    company: 'K. Ludwig Gesellschaft m.b.H.',
+    location: 'Wien,Donaustadt',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '8',
     title: 'Kassierer/in (Handel)',
-    company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Gurgl',
+    company: 'T & G',
+    location: 'Treffen',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '9',
     title: 'Kassierer/in (Handel)',
     company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Galtür',
+    location: 'Landeck',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '10',
     title: 'Kassierer/in (Handel)',
-    company: 'EUROSPAR',
-    location: 'Haag am Hausruck',
+    company: 'T & G',
+    location: 'Kössen',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '11',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Linz',
+    company: 'MPREIS MiniM',
+    location: 'Sellrain',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '12',
     title: 'Kassierer/in (Handel)',
-    company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Hall in Tirol',
+    company: 'Penny GmbH',
+    location: 'Palbersdorf',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '13',
     title: 'Kassierer/in (Handel)',
-    company: 'T & G',
-    location: 'Imst',
+    company: 'Penny GmbH',
+    location: 'Kottingbrunn',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '14',
     title: 'Kassierer/in (Handel)',
-    company: 'MPREIS Warenvertriebs GmbH',
-    location: 'Hötting',
+    company: 'Penny GmbH',
+    location: 'Hainfeld',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '15',
     title: 'Kassierer/in (Handel)',
-    company: 'Autohof Wörgl',
-    location: 'Wörgl',
+    company: 'Penny GmbH',
+    location: 'Maria Enzersdorf',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '16',
     title: 'Kassierer/in (Handel)',
-    company: 'SPAR Supermarkt',
-    location: 'Steyr',
+    company: 'BILLA AG',
+    location: 'Wien,Landstraße',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '17',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Wels',
+    company: 'BILLA AG - BILLA PLUS (Pachergasse)',
+    location: 'Steyr',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-13'
+    postedDate: '2026-03-20'
   },
   {
     id: '18',
     title: 'Kassierer/in (Handel)',
     company: 'Penny GmbH',
-    location: 'Pregarten',
+    location: 'Wiener Neustadt',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-20'
   },
   {
     id: '19',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Wiener Neudorf',
+    company: 'MPREIS Warenvertriebs GmbH',
+    location: 'Mayrhofen',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-20'
   },
   {
     id: '20',
     title: 'Kassierer/in (Handel)',
-    company: 'Lidl Österreich GmbH',
-    location: 'Wien,Donaustadt',
+    company: 'MediaMarkt Wien Millennium City GmbH',
+    location: 'Wien,Brigittenau',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-19'
   },
   {
     id: '21',
     title: 'Kassierer/in (Handel)',
-    company: 'MEDIA MARKT TV-Hifi-Elektro GmbH',
-    location: 'Dornbirn',
+    company: 'EUROSPAR',
+    location: 'Graz,01.Bez.:Innere Stadt',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-19'
   },
   {
     id: '22',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Stainach',
+    company: 'BILLA AG',
+    location: 'Wien,Hernals',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-19'
   },
   {
     id: '23',
     title: 'Kassierer/in (Handel)',
-    company: 'XXXLutz Bürs/Bludenz',
-    location: 'Bürs',
+    company: 'dm drogerie markt GmbH',
+    location: 'Wien,Meidling',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-18'
   },
   {
     id: '24',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Bürmoos',
+    company: 'dm drogerie markt GmbH',
+    location: 'Linz',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-18'
   },
   {
     id: '25',
     title: 'Kassierer/in (Handel)',
-    company: 'Penny GmbH',
-    location: 'Freistadt',
+    company: 'MediaMarkt Wien Hietzing GmbH',
+    location: 'Wien,Hietzing',
     type: 'Vollzeit',
     category: 'Kassierer/in (Handel)',
-    postedDate: '2026-03-12'
+    postedDate: '2026-03-18'
   }
 ];
 
